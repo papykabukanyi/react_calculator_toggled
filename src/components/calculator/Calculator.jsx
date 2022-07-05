@@ -46,6 +46,7 @@ const Calculator = () => {
             const transform = `translateY(${-(expDiv.offsetHeight + 10) + 'px'}) scale(0.4)`;
 
             try {
+                // eslint-disable-next-line
                 let res = eval(expression);
 
                 setExpression(res.toString());
